@@ -1,0 +1,571 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    background-color: #00aeef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    min-height: 90px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-top-menu p {
+    margin: 0;
+}
+
+.nav-logo-container a img {
+    width: 115px;
+}
+
+.navbar-menu-container {
+    display: none;
+}
+
+.navbar-links-container a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: solid 1px #00aeef;
+}
+
+.navbar-links-container a:hover {
+    border-bottom: solid 1px #fff;
+}
+
+#agenda {
+    background: #000;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#agenda:hover {
+    opacity: 0.8;
+    border-bottom: none;
+}
+
+/* HOME */
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    background: #fff;
+    justify-content: flex-end;
+    padding: 10px 84px;
+    margin: 0 50px 0 0;
+}
+
+.top-menu-itens {
+    display: flex;
+    gap: 5px;
+}
+
+.text-top-menu a {
+    text-decoration: none;
+    border-bottom: solid 1px #fff;
+    color: #222;
+}
+
+.text-top-menu a:hover {
+    border-bottom: solid 1px #00aeef;
+}
+
+.text-top-menu-span {
+    font-weight: 600;
+    color: #00aeef;
+}
+
+#Banner-home {
+    width: 100%;
+}
+
+
+/* ABOUT */
+
+.about-section-3x {
+    padding: 50px 0 90px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-us-left h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00aeef;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-us-left h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.about-us-left p {
+    margin-bottom: 15px;
+    border-bottom: solid 1px #fff;
+}
+
+.about-us-left p:hover {
+    border-bottom: solid 1px #00aeef;
+
+}
+
+.about-section-3x .violet {
+    background: linear-gradient(rgba(111, 128, 255, 0.95), rgba(111, 128, 255, 0.95));
+}
+
+.about-section-3x .blue {
+    background: linear-gradient(rgba(0, 191, 243, 0.95), rgba(0, 191, 243, 0.95));
+}
+
+.about-section-3x .green {
+    background: linear-gradient(rgba(130, 202, 156, 0.95), rgba(130, 202, 156, 0.95));
+}
+
+.single-feature {
+    text-align: center;
+    border-radius: 3px;
+    padding: 30px 20px;
+    margin-bottom: 50px;
+}
+
+.single-feature h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.single-feature p {
+    color: #fff;
+}
+
+/* SERVICES */
+
+#services {
+    background: #FAFAFA;
+}
+
+.service-container h3 {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.service-itens-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 100px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.service-item {
+    width: 25%;
+    background: #eaeaea;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    box-shadow: 0 0 15px 0 rgba(46, 61, 73, 0.03);
+}
+
+.service-item-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.service-item-text h4 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.service-item-text p {
+    color: #616161;
+}
+
+#saude {
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+}
+
+#suporte {
+    border-radius: 10px;
+    border-bottom-left-radius: 50px;
+}
+
+#e-social {
+    border-radius: 10px;
+    border-bottom-right-radius: 50px;
+}
+
+#treinamento {
+
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+}
+
+#laudos, #absenteismo {
+    border-radius: 10px;
+}
+
+/* BENEFITS */
+
+.benefits-content, .benefits-normas-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-text, .benefits-normas-text {
+    margin: 50px;
+    padding: 40px;
+    width: 50%;
+}
+
+.benefits-text h2, .benefits-text p, .benefits-normas-text h2, .benefits-normas-text p {
+    width: 75%;
+}
+
+.benefits-text h2, .benefits-normas-text h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.benefits-text p, .benefits-normas-text p {
+    color: #616161;
+}
+
+.benefits-img, .benefits-normas-img {
+    width: 50%;
+}
+
+.benefits-img img, .benefits-normas-img img {
+    width: 100%;
+}
+
+/* INFOS */
+
+.info-container {
+    margin: 30px 0;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-item-content {
+    padding: 50px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.info-item-content h2 {
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+.info-item-content p {
+    font-size: 17px;
+    margin: 15px auto;
+}
+
+#info-item-treinamento {
+    background: #6e80fe;
+    color: #fff;
+}
+
+#info-item-exames {
+    background: #eaeaea;
+}
+
+#info-item-ltcat {
+    background: #00aeef;
+    color: #fff;
+}
+
+/* CONTACT */
+
+.contact-section {
+    padding: 120px 0 90px 0;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content h1 {
+    font-size: 33px;
+    color: #616161;
+}
+
+.contact-content p {
+    font-size: 18px;
+    color: #616161;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* FORMS */
+
+.form {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.form-title {
+    text-align: center;
+    padding: 20px;
+}
+
+#alertForm {
+    display: none;
+    margin: 30px 0 !important;
+}
+
+#form-submit {
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #00aeef;
+    padding: 25px;
+}
+
+footer h5 {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.socialMedias {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.footer-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content img {
+    width: 150px;
+}
+
+.footer-content p {
+    width: 50%;
+    margin: 10px;
+}
+
+.footer-content1 p {
+    margin: 3px;
+}
+
+.footer-content1 svg {
+    font-size: 15px;
+}
+
+.footer-content1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.span-footer:hover {
+    border-bottom: solid 1px #fff;
+}
+
+.bottom-footer {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+}
+
+.bottom-footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SCROLL */
+
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00bbff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top-button.visible {
+    display: inline-block;
+}
+
+.scroll-to-top-button:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 1180px) {
+
+    /* NAV */
+    nav {
+        top: 0;
+    }
+
+    .top-menu {
+        display: none;
+    }
+
+    .navbar-links-container a {
+        display: none;
+    }
+
+    .navbar-menu-container {
+        display: unset;
+    }
+
+    .navbar-menu-container svg {
+        font-size: 35px;
+    }
+
+    .navbar-menu-link {
+        text-decoration: none;
+        color: #222;
+    }
+
+    .infos-mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .infos-mobile p, .infos-mobile a {
+        text-decoration: none;
+        color: #212529;
+    }
+
+    .infos-mobile a:hover {
+        border-bottom: solid 1px #00aeef;
+    }
+
+    /* ABOUT */
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    /* BENEFITS */
+
+    .benefits-content, .benefits-normas-content {
+        flex-wrap: wrap;
+    }
+
+    .benefits-img, .benefits-normas-img {
+        width: 100%;
+    }
+
+    .benefits-text, .benefits-normas-text {
+        width: 100%;
+        margin: 25px;
+    }
+
+    /* INFOS */
+
+    .info-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .info-item-content {
+        width: 85%;
+    }
+
+    /* FORMS */
+
+    .form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos-rows {
+        display: block;
+    }
+
+    .form-contact-container, .form-container {
+        width: 85%;
+    }
+
+    /* FOOTER */
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-content p {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .footer-content1 p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 950px) {
+    /* SERVICE */
+
+    .service-itens-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #saude, #suporte, #e-social, #treinamento, #laudos, #absenteismo {
+        border-radius: 10px;
+        width: 50%;
+    }
+}
