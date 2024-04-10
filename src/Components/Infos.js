@@ -1,47 +1,52 @@
 import React from "react";
 
 const Info = () => {
+  const servicesData = [
+    {
+      title: "Treinamentos",
+      id: "info-item-treinamento",
+      listItem: [
+        "NR 6 – Comissão interna de prevenção de acidente",
+        "NR 10 - Segurança em instalações e serviços em eletricidade",
+        "NR20- Segurança e saúde no trabalho com inflamáveis e combustíveis",
+        "NR 33 - Segurança e saúde nos trabalhos em espaços confinados",
+        "NR 35 – Trabalho em altura",
+      ],
+    },
+    {
+      title: "Exames Toxicológicos",
+      id: "info-item-exames",
+      listItem: [
+        "Motoristas profissionais",
+        "Exames Militares e Públicos",
+        "Tripulação embarcada",
+      ],
+    },
+    {
+      title: "LTCAT – Laudo Técnico das Condições do Ambiente de Trabalho.",
+      id: "info-item-ltcat",
+      listItem: [
+        "PCA - Programa de Conservação Auditiva.",
+        "PPR - Programa de Conservação Auditiva.",
+        "AE – Análise Ergonômica do Trabalho.",
+      ],
+    },
+  ];
   return (
     <>
-      <section className="info" >
+      <section className="info">
         <div className="info-container">
           <div className="info-item">
-            <div className="info-item-content" id="info-item-treinamento">
-              <h2>Treinamentos</h2>
-              <p>NR 6 – Comissão interna de prevenção de acidente</p>
-              <p>NR 10 - Segurança em instalações e serviços em eletricidade</p>
-              <p>
-                NR20- Segurança e saúde no trabalho com inflamáveis e
-                combustíveis
-              </p>
-              <p>
-                NR 33 - Segurança e saúde nos trabalhos em espaços confinados
-              </p>
-              <p>NR 35 – Trabalho em altura</p>
-            </div>
-            <div className="info-item-content" id="info-item-exames">
-              <h2 >Exames Toxicológicos</h2>
-              <ul>
-                <li>
-                  <p>Motoristas profissionais</p>
-                </li>
-                <li>
-                  <p>Exames públicos e militares</p>
-                </li>
-                <li>
-                  <p>Tripulação embarcada</p>
-                </li>
-              </ul>
-            </div>
-            <div className="info-item-content" id="info-item-ltcat">
-              <h2>
-                LTCAT – Laudo Técnico das Condições do Ambiente de Trabalho.
-              </h2>
-
-              <p>PCA - Programa de Conservação Auditiva.</p>
-              <p>PPR - Programa de Conservação Auditiva.</p>
-              <p >AE – Análise Ergonômica do Trabalho.</p>
-            </div>
+            {servicesData.map((item, i) => (
+              <div className="info-item-content" key={i} id={item.id}>
+                <h2>{item.title}</h2>
+                <ul>
+                  {servicesData[i].listItem.map((listItem, j) => (
+                    <li key={j}>{listItem}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
