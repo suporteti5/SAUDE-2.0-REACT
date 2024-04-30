@@ -23,7 +23,6 @@ const About = () => {
                 <div className="about-us-middle">
                   <div className="single-feature violet">
                     <h3>Saúde Ocupacional</h3>
-                    <p className="mt-2">PPRA (NR9)</p>
                     <p className="mt-3">PCMSO (NR7)</p>
                     <p className="mt-3">LTCAT</p>
                     <p className="mt-3">ASO - Atestado de Saúde Ocupacional</p>
